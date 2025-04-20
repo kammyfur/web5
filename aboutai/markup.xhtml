@@ -1,0 +1,46 @@
+<p>Depuis peu, Minteck Projects tire profit des technologies proposées par l'intelligence artificielle. Sur cette page, nous allons répondre à ce type de questions :</p>
+<ul>
+    <li>Quels services fonctionnent en parti avec l'IA ?</li>
+    <li>Quels services fonctionnent intégralement avec l'IA ?</li>
+    <li>Pourquoi utiliser l'IA plutôt qu'un simple algorythme ?</li>
+    <li>En quoi l'IA de Minteck Projects est particulière ?</li>
+</ul>
+
+<h2>Quels services fonctionnent en parti avec l'IA ?</h2>
+<p>Les services fonctionnant, même une toute petite partie, avec de l'intelligence artificielle commençent à augmenter.</p>
+
+<h3>Site officiel</h3>
+<p>Ça peut paraître anodin, mais depuis la version 5.1, certaines pages de notre site sont générées automatiquement par une intelligence artificielle. Parmi ces pages, on retrouve la <a href="/prod/intro">page des projets</a>, et l'<a target="_blank" href="/status/polymer">état des services</a>.</p>
+<p>Notez que pour la page des projets, les visiteurs n'ont remarqué <b>aucun</b> changement dans la mise en page, car cette IA est simplement chargée de générer le code à partir d'un fichier de configuration <small><a href="/prod/intro/config.json" target="_blank">(voir le fichier)</a></small>.</p>
+<p>Cette IA apprend à lire une structure spéciale de fichier et s'adapte aux modifications qui y sont apporté (ajout d'un nouveau service, ou tout simplement la modification des informations pour un service).</p>
+<p>L'IA de l'état des services est plus complexe, car elle doit aller visiter chacun de nos sites pour en récupérer l'état. Cette action, qui prendrait plusieurs minutes à effectuer pour un humain, est effectuée en moins de 15 secondes par une intelligence artificielle.</p>
+<p>Cette IA lit aussi un fichier de configuration précis et va aller regarder chacun des sites spécifiés dans l'ordre. <s>Notez que les sites sur l'état des services <b>ne sont jamais de le même ordre</b> du au fait que certains sites répondent plus rapidement. Mais depuis la version 5.2 du site, les services sont triés par ordre alphabétique <small>(il fallait juste ajouter une ligne de code avant le traitement du fichier)</small>. Le site le plus rapide est toujours le plus haut.</s></p><p>Depuis la version 5.3 du site officiel, et la version 2.0 du système d'état des services, les sites sont vérifiés de manière synchrone. C'est-à-dire que le logiciel attend la réponse d'un site avant d'envoyer une requête au suivant. Ce système qui, certes, augmente le temps nécessaire pour mettre à jour l'état des services, assure une meilleur stabilité et fiabilité.</p>
+
+<h3>PinPages</h3>
+<p>Comment PinPages fait pour censurer les injures dans vos posts et commentaires ? Comment PinPages fait pour que votre biographie ait une super structure ? Comment PinPages fait pour savoir quand votre meilleur ami ne s'est pas connecté depuis 1 semaine ? Tout cela est effectué par une intelligence artificielle !</p>
+<p>Pour la censure des injures dans les posts, commentaires, biographie, et autres, nous fournissons une liste de mots, et les administrateurs réseau signalent manuellement à l'intelligence artficielle que telle ou telle injure ne doit pas être censurée, et l'IA s'adapte en conséquence.</p>
+<p>Pour la structure de votre biographie, il s'agit de la syntaxe Markdown. Nous utilisons notre propre parseur Markdown assisté avec de l'intelligence artificielle. De ce fait, l'IA apprend et analyse en détail la structure de votre post/commentaire/biographie et assigne une catégorie à chaque élément. Ensuite, l'IA remplace la syntaxe Markdown par une syntaxe HTML, lisible nativement par votre navigateur.</p>
+<p>Notez que le passage du Markdown au HTML s'effectue au moment du chargement de la page contenu le texte, et non lors de la sauvegarde. Cela permet d'éviter les injections de code malveillant (XSS)</p>
+<p>Pour les périodes d'inactivité, l'intelligence artificielle va simplement retenir la dernière fois que vous avez chargé une page sur votre site (c'est pour cette raison que certains comptes inactifs depuis longtemps n'ont pas de message "Hors ligne depuis ..."), puis l'intelligence artificielle va en déduire si vous êtes en ligne et actif, en ligne mais inactif, ou hors-ligne.</p>
+<p>Notez que l'IA vous considère hors ligne lorsque vous n'avez pas chargé de page les 10 dernières minutes, ce qui peut s'avérer faux si vous lisez une seule et unique page depuis 10 minutes ou plus.</p>
+
+<h3>Autres</h3>
+<p>De nombreux autres services que nous proposons fonctionnent partiellement grâce à l'intelligence artificielle, tels que :</p>
+<ul>
+    <li>Minteck Projects CMS</li>
+    <li>BetterSearch</li>
+</ul>
+<p>Vous souhaitez améliorer ces intelligences artificielles pour nous aider à combler le manque de collaborateurs ? Rien de plus simple, il vous suffit d'utiliser nos services ! Une utilisation au quotidien des intelligences artificielles les alimente suffisament pour qu'elles puissent évoluer très rapidement...</p>
+
+<h2>Quels services fonctionnent intégralement avec l'IA ?</h2>
+<p>Actuellement, <b>un seul</b> de nos services fonctionne intégralement avec de l'intelligence artificielle : il s'agit de Tyson Bots. Que ce soit la correction ortographique et grammariale, la compréhension des questions, la génération des réponses ou encore la voix, Tyson Bots est intégralement fonctionnel grâce à de l'intelligence artificielle.</p>
+<p>Mais, nous ne développons pas l'IA qui permet de faire fonctionner Tyson Bots, alors que les IA citées précédemment ont entièrement été développées chez nous. Tyson Bots fonctionne grâce à Google Dialogflow.</p>
+<p>Attention toutefois, intelligence artificielle ne signifie pas nécessairement apprentissage profond (ou <b>deep learning</b> en anglais), malgré le fait que nous travaillons activement à mettre cela en place sur Tyson Bots. Par contre, c'est à nous de dire si l'IA a répondu la bonne réponse ou non, auquel cas elle va s'améliorer. Ce procédé est appelé <b>Agent Training</b>.</p>
+
+<h2>Pourquoi utiliser l'IA plutôt qu'un simple algorythme ?</h2>
+<p>Un algorythme n'est qu'une suite d'actions que l'on ordonne à une machine d'effectuer, alors qu'une intelligence artificielle est capable de réfléchir par elle même, d'être intelligente (d'où le nom). Un algorythme est en quelques sortes "bête".</p>
+<p>L'intelligence artificielle est aussi très flexible dans le sens où elle peut apprendre des changements qui sont effectués automatiquement et sans la nécessité de modifier le code.</p>
+
+<h2>En quoi l'IA de Minteck Projects est particulière ?</h2>
+<p>Vous l'aurez compris tout au long de cette page, Minteck Projects utilise de l'intelligence artificielle. Mais l'intelligence artificielle de Minteck Projects  se distingue par rapport aux autres...</p>
+<p>Nos intelligences artificielles sont "neural-less", sela signifie qu'elles ne fonctionnent pas sur la base d'un réseau neuronal. Dans ce cas, on pourrait juste parler de pseudo-intelligence artificielle, même si elles fournissent des résultats similaires à de véritables intelligences artificielles.</p>

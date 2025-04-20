@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recherche Minteck Projects</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <script>
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+    </script>
+</head>
+<body>
+    <span id="lastsearch"></span><br>
+    <a href="/">Retour au site Minteck Projects</a>
+    <script>
+    
+    cookie = getCookie('__last')
+
+    if (cookie.trim() == "") {
+        document.getElementById('lastsearch').innerHTML = "Vous n'avez pas encore effectué de recherche";
+    } else {
+        document.getElementById('lastsearch').innerHTML = "Dernière recherche : " + cookie;
+    }
+
+    function validate() {
+        if (document.getElementById('searchbox').value.trim() == "") {
+            return;
+        } else {
+            location.href = "./search/?q=" + document.getElementById('searchbox').value.trim();
+            return;
+        }
+    }
+
+    function prevalidate() {
+        if (document.getElementById('searchbox').value.trim() == "") {
+            document.getElementsByClassName('searchnow')[0].classList.add('disabled');
+            return;
+        } else {
+            document.getElementsByClassName('searchnow')[0].classList.remove('disabled');
+            return;
+        }
+    }
+
+    </script>
+    <div class="vcenter">
+        <center>
+            <img class="logo" src="icon.png"><br><br>
+            <form action="javascript:validate()">
+                <input type="text" onchange="prevalidate()" onkeydown="prevalidate()" onkeypress="prevalidate()" onkeyup="prevalidate()" id="searchbox" name="q" class="searchbox" autocomplete="off" placeholder="Rechercher dans Minteck Projects..."><input type="submit" class="searchnow disabled" value="">
+            </form>
+        </center>
+    </div>
+</body>
+</html>

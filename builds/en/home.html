@@ -1,0 +1,29 @@
+<p>Welcome to Minteck Projects Continuous Integration Job Tracker (aka Minteck Projects CIJT). This system helps us deploy testing instances of our services so that you and many other persons can test our products before they release to everyone.</p>
+                    
+                    <h2>How it works?</h2>
+                    <p>We have multiple servers that runs a build script at 9 PM (UTC) everyday inside a container. This build script will compile and package the software, and deploy it here so you can test it.</p>
+                    <p>Services providing automatic updates or OTA update system won't be updated every time a daily build is issued. By the way, you will need to download the package here every time a build occurs.</p>
+                    <p>If the software supports versioning, the version number is « currentVersion-buildDate ». For example, a software version 2.0 which was built on July 4th 2020 will have the version « 2.0-20200704 ».</p>
+                    
+                    <h2>How to browse?</h2>
+                    <p>This service is essentially one and only one page, the one you are on. On the left side (or on the top if you use a phone), you see a tree with different things, so let's summary it here:
+                        <ul>
+                            <li><b>First, we have a container.</b> A container is a kind of micro-computer that is secured and protects the "host" system (the system that runs the container). We run our builds on a container to prevent security issues and because we need specific software.
+                                <ul>
+                                    <li>Inside this container, <b>we have some jobs</b>. Jobs are kind of tasks that runs on the container to do specific things at a specific time. For example, a job could compile a software and deploy it here.
+                                        <ul>
+                                            <li>Inside this job, <b>we have the status</b>. A job can either succeed, fail, success but with warnings, or be running. Note that you won't be able to get info about a job that is currently running.</li>
+                                            <li>Then, <b>we have the time</b>. If the job finished, it's the relative time the job finished (3 hours ago, 1 minute ago, just now, ...). If the job is still running, it's the relative time the job started.</li>
+                                            <li>Next, <b>we have the artifacts</b>. Artifacts are files generated out of the job that are meant to be downloaded by the end user. For example an installer file for a software and/or the modified source code. Everything that would need to be downloaded will be right here.</li>
+                                            <li>Finally, <b>we have the logs</b>. Logs have nothing to do with trees! Logs contains information about what happened during the job. Logs are very useful when a job fail, to know exactly where did it failed.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>At the end of this list, <b>we have the summary.</b> The summary basically lists the number of containers, the number of jobs, and the number of failed jobs (if any). This can summarize how loaded the servers are.</li>
+                        </ul>
+                    </p>
+
+                    <h2>What means « just now »?</h2>
+                    <p>You know, counting time a program takes to run can't be precise, because this depends on multiple criteria, and depending on when did we start counting the time, we can't get the same results. This way, we say that our time isn't precise.</p>
+                    <p>And our time isn't precise enough to give it you in seconds. So, when we say « just now », it can be substituted by « less than a minute ago ». We say that because we can't give you the precise seconds it took.</p>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Document - [Live HTML Editor]</title>
+  <style type="text/css" media="screen">
+    body {
+        overflow: hidden;
+    }
+
+    #editor {
+        margin: 0;
+        position: absolute;
+        top: 35px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 50%;
+    }
+
+    #preview {
+        margin: 0;
+        position: absolute;
+        top: 35px;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #menubar {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        vertical-align: middle;
+        text-align: center;
+        padding: 5px;
+    }
+
+    #mb_title {
+        float: left;
+    }
+
+    #mb_dl {
+        float: right;
+        position: relative;
+        right: 20px;
+    }
+    a {
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    a:active {
+        color: red;
+    }
+    a:visited {
+        color: purple;
+    }
+  </style>
+</head>
+<body>
+
+<pre id="editor">
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang="en"&gt;
+
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    
+    &lt;body&gt;
+        &lt;!-- Insert your code here --&gt;
+    &lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+<div id="menubar">
+    <span id="mb_title">Document</span>
+    <span id="mb_status"><center>Loading editor and preview...</center></span>
+    <span id="mb_dl">338 characters long</span>
+</div>
+
+<script>
+
+function setStatus(text) {
+    document.getElementById('mb_status').innerHTML = text;
+}
+
+</script>
+
+<script src="/lib/ace/src-noconflict-edited/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/html");
+</script>
+<!-- editor.session.getValue() -->
+<iframe id="preview"></iframe>
+
+<script src="/lib/jquery.js"></script>
+
+<script>
+    document.getElementById('preview').contentWindow.document.documentElement.innerHTML = editor.session.getValue() + "\<script\>top.setStatus(\'Ready\');\<\/script\>";;
+
+    $(() => {
+    window.onbeforeunload = function(){
+        return "Are you sure you want to quit the editor now? You'll lose your current text...";
+    };
+    window.onbeforeunload = function(){
+        return "Are you sure you want to quit the editor now? You'll lose your current text...";
+    };
+    window.onbeforeunload = function(){
+        return "Are you sure you want to quit the editor now? You'll lose your current text...";
+    };
+    window.onbeforeunload = function(){
+        return "Are you sure you want to quit the editor now? You'll lose your current text...";
+    };
+    window.onbeforeunload = function(){
+        return "Are you sure you want to quit the editor now? You'll lose your current text...";
+    };
+})
+
+    function refreshDiv() {
+        setStatus("Refreshing preview...")
+        document.getElementById('preview').contentWindow.document.documentElement.innerHTML = editor.session.getValue() + "\<script\>top.setStatus(\'Ready\');\<\/script\>";
+        if (document.getElementById('preview').contentWindow.document.title.trim() == "") {
+            document.title = "Untitled - [Live HTML Editor]";
+            document.getElementById('mb_title').innerHTML = "Untitled";
+        } else {
+            document.title = document.getElementById('preview').contentWindow.document.title + " - [Live HTML Editor]";
+            document.getElementById('mb_title').innerHTML = document.getElementById('preview').contentWindow.document.title;
+        }
+        document.getElementById('mb_dl').innerHTML = editor.session.getValue().length + " characters long";
+        setTimeout(function () {
+            setStatus('Ready');
+        }, 100)
+    }
+
+    setStatus('Ready');
+</script>
+
+</body>
+</html>

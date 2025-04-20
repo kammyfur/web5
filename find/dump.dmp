@@ -1,0 +1,395 @@
+
+
+
+
+
+
+
+    
+    
+    
+    <title>Minteck Projects™  •  For a free Internet</title>
+    
+    
+
+
+    Votre navigateur n'est (toujours) pas supporté par une ou plusieurs des fonctionnalités que nous utilisons
+    Votre navigateur n'est (toujours) pas supporté par une ou plusieurs des fonctionnalités que nous utilisons
+    
+        <a onclick="menu()" title="Menu" class="menulink-button"></a>
+        
+        minteck-projects://
+        
+            document.getElementById('mbtxt').innerHTML = "minteck-projects:/" + location.pathname
+        
+        
+    
+
+    
+
+    
+
+    
+    Chez Minteck Projects™, nous défendons Internet !
+    
+        document.getElementById('welcome').innerHTML = '_';
+    
+    
+        We are on the same side of Mozilla:  "Internet is a common property, respect it!"   Minteck Projects respects the privacy of its users, while offering quality services. Like what, the violation of the privacy does not make it possible to improve the quality of its services!   We have the following qualities and advantages: 
+         We respect the privacy of our users. 
+         We are very transparent about the use of user data. 
+         We never favor quantity over quality. 
+         We are very much at the service of our community, and very attentive. 
+         For most of our services, we give you access to the source code of these services. 
+         We are decentralized, it means that wherever you are, you can work with us. 
+      And unfortunately, like everyone else, we "have" the following disadvantages: 
+             When we're not active, it's for a long time. 
+             Our servers are reliable, but not enough for our taste. 
+             We only communicate when French or English. 
+             Our programs are very few multi-platforms, often a program dedicated to a platform ... 
+             We are pretty vague about our real identity, for reasons of personal security. 
+             We tend to ask you more information than we really need, which can put some users in a difficult situation. 
+        
+         
+            
+                
+                         Safety and Integrity     We take the utmost care that our users safe using our services, and that our services are reliable and stable as much as possible ... 
+                
+                
+                         Advertising and Sharing     Sharing, speaking and promoting are essential elements for the proper functioning of our products, but we still know how to manage them properly so as not to be too intrusive as possible. 
+                
+                
+                          "The Web is Freedom"      On the Internet, you all have the right to be independent! That's why Minteck Projects asks you for an account for each of its services, because we suspect that you will not use them all ... So you are never dependent on our services! 
+                    
+            
+         
+
+        
+        
+            minteck-projects://  
+         Latest News: <a class="editLink" href="/tools/editNews"> edit </a>         Merci à vous de nous permettre de progresser ainsi !
+        
+         Who are we? 
+        Minteck Projects is a non-profit organization offering a variety of computer and electronic services. We mainly offer services on the Internet, accessible by all.
+         Where are we? 
+        Our servers are spread all over the world, but we try to respect French legislation. So you will have no problem!
+         Since when are we here? 
+        We are here since September 2018. 
+        We were founded to recover the project Chat'Max (which does not exist today unfortunately...), so that it remains only 4 months with us ... 
+        In January 2019, we founded Minteck Projects Private, a private and personal company for Minteck Projects management staff.
+         Who is Minteck? 
+        Minteck is probably the one who is writing to you right now ^^ ... Minteck is the CEO of Minteck Projects from the beginning. It is also he who set up the partnership with Numit ... He gave all the ideas and advance alone in his business since all this time ...  (I must not hide that it in fact a lot of work to get nothing in return ... You have to be really generous to agree to work in such conditions ... but no, I'm kidding!) 
+         Why do not we know more about him? 
+        Unfortunately, he does not want to introduce himself, and still prefers to keep these distances with the Internet. It seeks to keep private all personal information, but can still talk with you, do not worry (good after maybe not if you do not look nice)...
+         Our slogan 
+        Our current slogan is  "The Web is Freedom" . It was chosen as a slogan because it represents what we are trying to sell: services where you are free to be dependent or not, to use them or not... Unlike other companies offering similar services, we respect enormously the laws in force in France, and in several other countries...        
+        
+        
+        // console.log("Chargement de l'animation...")
+    var welcome = document.getElementById('welcome')
+    // console.log("Chargé !")
+    setTimeout(function () {
+        // console.log("Étape...")
+        welcome.innerHTML = 'C_'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Ch_'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Che_'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Chez_'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Chez _'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Chez M_'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Chez Mi_'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Chez Min_'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Chez Mint_'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Chez Minte_'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Chez Mintec_'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Chez Minteck_'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Chez Minteck _'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Chez Minteck P_'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Chez Minteck Pr_'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Chez Minteck Pro_'
+        setTimeout(function () {
+            // console.log("Étape...")
+        welcome.innerHTML = 'Chez Minteck Proj_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Proje_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projec_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Project_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™,_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, n_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, no_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nou_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous _'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous d_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous dé_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous déf_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défe_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défen_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défend_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défendo_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défendon_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défendons_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défendons _'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défendons I_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défendons In_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défendons Int_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défendons Inte_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défendons Inter_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défendons Intern_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défendons Interne_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défendons Internet_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défendons Internet _'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défendons Internet !_'
+        setTimeout(function () {
+        welcome.innerHTML = 'Chez Minteck Projects™, nous défendons Internet !'
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    }, 100)
+    
+    var m_pres_mounted = false;
+    var menu_default = true;
+        function menu() {
+        if (menu_default == true) {
+            var x = document.getElementById("menu");
+            fadeIn(x);
+            document.getElementById("menu").style.display = "block";
+            menu_default = false;
+        } else {
+        var x = document.getElementById("menu");
+        if (x.style.display == "none") {
+            fadeIn(x);
+            document.getElementById("menu").style.display = "block";
+        } else {
+        fadeOut(x)
+        setTimeout(function (x) {
+            document.getElementById("menu").style.display = "none";
+         }, 500);
+        }
+        }}
+        function fadeIn(el){
+  console.log("[mprjWeb.animation.jsHandler] Affichage du menu")
+  el.classList.add('show');
+  el.classList.remove('hide');  
+}
+
+function fadeOut(el){
+  console.log("[mprjWeb.animation.jsHandler] Masquage du menu")
+  el.classList.add('hide');
+  el.classList.remove('show');
+}
+
+window.onscroll = function() {
+ if(checkVisible(document.getElementById('security'))) {
+    sca1();
+ } else if (m_pres_mounted) {
+     sca2();
+ }
+};
+
+function sca1() {
+    console.log("[mprjWeb.animation.jsHandler] Déclenchement de l'animation 'm-pres-security'")
+    document.getElementById('security').classList.add('m-pres-security-animation');
+    console.log("[mprjWeb.animation.jsHandler] Déclenchement de l'animation 'm-pres-advertising'")
+    document.getElementById('advertising').classList.add('m-pres-advertising-animation');
+    console.log("[mprjWeb.animation.jsHandler] Déclenchement de l'animation 'm-pres-freedom'")
+    document.getElementById('freedom').classList.add('m-pres-freedom-animation');
+    m_pres_mounted = true;
+}
+
+function sca2() {
+    // console.log("[mprjWeb.animation.jsHandler] Destruction de l'animation 'm-pres-security'")
+    // document.getElementById('security').classList.remove('m-pres-security-animation');
+    // console.log("[mprjWeb.animation.jsHandler] Destruction de l'animation 'm-pres-advertising'")
+    // document.getElementById('advertising').classList.remove('m-pres-advertising-animation');
+    // console.log("[mprjWeb.animation.jsHandler] Destruction de l'animation 'm-pres-freedom'")
+    // document.getElementById('freedom').classList.remove('m-pres-freedom-animation');
+    // m_pres_mounted = false;
+}
+
+function checkVisible(element) {
+var ret;
+    var h1 = element;
+    var bounding = h1.getBoundingClientRect();
+    if (
+	bounding.top >= 0 &&
+	bounding.left >= 0 &&
+	bounding.right 
+
+
+        
+        Votre navigateur n'est (toujours) pas supporté par une ou plusieurs des fonctionnalités que nous utilisons
+        
+
+
+
+
+a[title="Hosted on free web hosting 000webhost.com. Host your own website for FREE."] {
+    display: none;
+}
+
+
+
+
+Minteck Projects
+
+    <a style="margin-top:15px;text-decoration:none;color:#fff;" onclick="return;">Our partnairs:</a>
+    <a href="https://www.mozilla.org/fr/" title="Mozilla"></a>
+    <a href="https://ubports.com/fr_FR/" title="UBports"></a>
+
+
+                Copyright © Minteck Projects LLC, All Rights Reserved.
+                Any partial or total duplicate of the content of this website or one of our projects are strictly unallowed.Minteck Projects™, and any other associated name are legal marks of Minteck Projects LLC in France and other countries.    
+
+
+        
+        
+            
+                
+                       Navigateur non supporté
+                 
+                 Le navigateur que vous utilisez (Google Chrome) n'est pas correctement supporté par notre site, et il se peut qu'il y ait des problèmes d'affichages avec certains éléments.Pour un meilleur rendu, nous vous conseillons de <a href="http://firefox.com">télécharger Mozilla Firefox</a>, un navigateur sur lequel notre site à été correctement testé...
+                 <a onclick="hideUnsupportedNotice()">Laissez moi seul, et sur le site</a>
+            
+            
+                
+                       Navigateur non supporté
+                 
+                 Le navigateur que vous utilisez (Internet Explorer) n'est pas correctement supporté par notre site, et il se peut qu'il y ait des problèmes d'affichages avec certains éléments.Pour un meilleur rendu, nous vous conseillons de <a href="http://firefox.com">télécharger Mozilla Firefox</a>, un navigateur sur lequel notre site à été correctement testé...
+                 <a onclick="hideUnsupportedNotice()">Laissez moi seul, et sur le site</a>
+            
+            
+                
+                       Navigateur non supporté
+                 
+                 Le navigateur que vous utilisez n'est pas correctement supporté par notre site, et il se peut qu'il y ait des problèmes d'affichages avec certains éléments.Pour un meilleur rendu, nous vous conseillons de <a href="http://firefox.com">télécharger Mozilla Firefox</a>, un navigateur sur lequel notre site à été correctement testé...
+                 <a onclick="hideUnsupportedNotice()">Laissez moi seul, et sur le site</a>
+            
+        
+        
+        String.prototype.contains = function(it) { return this.indexOf(it) != -1; };
+
+if (navigator.userAgent.contains(".NET")) {
+    document.getElementById('us-ie').classList.remove('hide2')
+} else {
+    if (navigator.userAgent.contains("Chrome")) {
+    document.getElementById('us-chrome').classList.remove('hide2')
+} else {
+    if (!navigator.userAgent.contains("Firefox")) {
+        document.getElementById('us-other').classList.remove('hide2')
+    }
+}
+}
+
+if (navigator.userAgent.contains(".NET") || navigator.userAgent.contains("Chrome") || !navigator.userAgent.contains("Firefox")) {} else {
+    document.getElementById('unsupported').classList.add('hide2')
+}
+
+
+

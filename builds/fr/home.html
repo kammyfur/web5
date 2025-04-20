@@ -1,0 +1,32 @@
+<p>Bienvenue dans Minteck Projects Continuous Integration Job Tracker (alias Minteck Projects CIJT). Ce système nous aide à déployer des instances de test de nos services afin que vous et de nombreuses autres personnes puissiez tester nos produits avant de les diffuser à tout le monde. </p>
+                    
+                    <h2>Comment ça marche ?</h2>
+                    <p>Nous disposons de plusieurs serveurs qui exécutent un script de construction à 21:00 (Temps universel coordonné) tous les jours dans un conteneur. Ce script de construction va compiler et empaqueter le logiciel, et le déployer ici pour que vous puissiez le tester.</p>
+                    <p>Les services disposant de mises à jour automatiques ou de mises à jour OTA ne seront pas mis à jour à chaque nouvelle construction quotidienne. De ce fait, vous devrez retélécharger le paquet ici à chaque fois que la construction s'effectue.</p>
+                    <p>Si le logiciel supporte la gestion de versions, le numéro de version sera sous la forme « versionActuelle-dateConstruction ». Par exemple, un logiciel en version 2.0 qui a été construit le 4 juillet 2020 aura la version « 2.0-20200704 ».</p>
+                    
+                    <h2>Comment naviguer ?</h2>
+                    <p>Ce service consiste en essentiellement une seule et unique page, celle sur laquelle vous vous trouvez. Sur le côté gauche (ou en haut si vous êtes sur téléphone), vous voyez un "arbre" avec différentes chôses, alors voyons voir ça :
+                        <ul>
+                            <li><b>Premièrement, nous avons un conteneur.</b> Un conteneur est une sorte de micro-ordinateur qui est sécurisé et que protège le système "hôte" (le système qui exécute le conteneur). Nous exécutons nos constructions sur un conteneur pour éviter les problèmes de sécurité, et aussi parce que nous avons besoin de logiciel spécifique.
+                                <ul>
+                                    <li>Dans ce conteneur, <b>il y a plusieurs tâches</b>. Les tâches sont des sortes de travaux qui s'exécutent sur le conteneur pour effectuer des actions spécifiques à une heure spécifique. Par exemple, une tâche pourrait compiler un logiciel et le déployer ici.
+                                        <ul>
+                                            <li>Dans cette tâche, <b>nous avons son état</b>. Une tâche peut soit réussir, échouer, réussir (mais avec des avertissements), ou être en cours d'exécution. Notez que vous ne pouvez pas obtenir d'informations sur une tâche qui est en cours d'exécution.</li>
+                                            <li>Ensuite, <b>nous avons le temps</b>. Si la tâche est terminée, c'est le temps relatif depuis la fin de la tâche (il y a 3 heures, il y a 1 minute, à l'instant, ...). Si la tâche est toujours en cours, c'est le temps relatif depuis le début de la tâche.</li>
+                                            <li>Pour continuer, <b>nous avons les artéfacts</b>. Les artéfacts sont des fichiers générés par la tâche qui sont conçus pour être téléchargés par l'utilisateur final. Ça peut-être un programme d'installation ou le code source modifié. Tout ce dont vous aurez besoin de télécharger sera ici.</li>
+                                            <li>Pour terminer, <b>nous avons les journaux</b>. Les journaux contiennent des informations sur ce qui s'est passé durant la tâche. Ils sont particulièrement utiles lorsqu'une tâche échoue, pour savoir exactement ce qui l'a fait échouer.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>À la fin de cette liste, <b>nous avons le résumé.</b> Le résumé liste basiquement les conteneurs, le nombre de tâches, et le nombre de tâches qui ont échouées (le cas échéant). Ça peut être utilisé pour savoir la charge que les serveurs ont a gérer.</li>
+                        </ul>
+                    </p>
+
+                    <!-- TODO: Translate! -->
+                    <span style="background-color:rgba(255, 0, 0, .25);">
+                        <h2 style="background-color:rgba(255, 0, 0, .25);">What means « just now »?</h2>
+                        <p style="background-color:rgba(255, 0, 0, .25);">You know, counting time a program takes to run can't be precise, because this depends on multiple criteria, and depending on when did we start counting the time, we can't get the same results. This way, we say that our time isn't precise.</p>
+                        <p style="background-color:rgba(255, 0, 0, .25);">And our time isn't precise enough to give it you in seconds. So, when we say « just now », it can be substituted by « less than a minute ago ». We say that because we can't give you the precise seconds it took.</p>
+                    </span>
